@@ -20,7 +20,7 @@ using namespace std;
 
 int main()
 {
-  using namespace MySpace1;
+  using namespace MySpace1; //이렇게 쓰면 생략이 가능하다.
   doSomething(3,4);
   //cout <<MySpace1::doSomething(3,4) <<endl;
   //cout <<Myspace2::doSomething(3,4) <<endl;
