@@ -2,24 +2,20 @@
 
 using namespace std;
 
-void printNumber(int my_number)
+void printNumber(const int my_number)
 {
+  //값을 마음대로 바구지 못하게 하기 위해 파라미터에 const를 붙이는 경우가 많다.
   cout << my_number << endl;
 }
 
 int main()
 {
+  const int price_per_item = 30;
   
+  int num_item = 123;
 
-  float pi = 3.14f;
+  int price = num_item * price_per_item;
 
-  //Decimal : 0 1 2 3 4 5 6 7 8 9 10
-  //Octal   : 0 1 2 3 4 5 6 7 10 11 12 13
-  //Hexa    : 0 1 2 3 4 5 6 7 8 9 A B C D E F 10
-
-  const double gravity {9.8}; //상수는 무조건 선언과 동시에 초기화해줘야 한다.
-
-  //gravity = 1.2; 상수라서 변경이 안된다. 
-  
+  //헤더로 정의해서 사용할 수도 있다.
   return 0;
 }
